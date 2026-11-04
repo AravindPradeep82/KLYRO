@@ -1,0 +1,103 @@
+
+.about-section {
+  padding: clamp(5rem, 10vw, 9rem) var(--page-gutter);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.about-layout {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 8vw, 8rem);
+}
+
+.about-intro {
+  position: sticky;
+  top: 8rem;
+  align-self: start;
+}
+
+.about-intro .eyebrow {
+  color: var(--accent-color);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+
+.about-intro h2 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  line-height: 1.05;
+  font-weight: 400;
+  margin-top: 1.5rem;
+}
+
+.about-content {
+  max-width: 600px;
+}
+
+.about-content > p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.about-content .about-lead {
+  color: var(--text-primary);
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  line-height: 1.45;
+  margin-bottom: 2rem;
+}
+
+.about-principles {
+  margin-top: 4rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.about-principles > div {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  column-gap: 1rem;
+}
+
+.about-principles span {
+  color: var(--accent-color);
+  font-size: 0.75rem;
+  padding-top: 0.3rem;
+}
+
+.about-principles h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.about-principles p {
+  grid-column: 2;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.7;
+  margin: 0.5rem 0 0;
+}
+
+@media (max-width: 700px) {
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-intro {
+    position: static;
+  }
+
+  .about-principles {
+    margin-top: 3rem;
+  }
+}

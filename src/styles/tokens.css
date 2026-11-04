@@ -1,0 +1,50 @@
+:root {
+  /* Brand palette */
+  --color-ink: #0d0d0f;
+  --color-ivory: #f6f3ee;
+  --color-stone: #d9d3c9;
+  --color-brass: #b08d57;
+
+  /* Typography */
+  --font-display: "Fraunces Variable", Georgia, serif;
+  --font-body: "Inter Variable", sans-serif;
+
+  /* Layout */
+  --container-width: 1280px;
+  --page-gutter: clamp(1.25rem, 5vw, 5rem);
+
+  /* Spacing */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-24: 6rem;
+
+  /* Motion */
+  --transition-fast: 180ms ease;
+  --transition-normal: 300ms ease;
+}
+
+/* Light theme */
+[data-theme="light"] {
+  --bg-primary: var(--color-ivory);
+  --bg-secondary: #ffffff;
+  --text-primary: var(--color-ink);
+  --text-secondary: #625e57;
+  --border-color: var(--color-stone);
+  --accent-color: var(--color-brass);
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --bg-primary: var(--color-ink);
+  --bg-secondary: #171719;
+  --text-primary: var(--color-ivory);
+  --text-secondary: #b7b0a5;
+  --border-color: #343438;
+  --accent-color: var(--color-brass);
+}

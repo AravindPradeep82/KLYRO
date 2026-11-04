@@ -1,0 +1,153 @@
+
+.contact-section {
+  padding: clamp(5rem, 10vw, 9rem) var(--page-gutter);
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.contact-layout {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 8vw, 8rem);
+}
+
+.contact-intro .eyebrow {
+  color: var(--accent-color);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+}
+
+.contact-intro h2 {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  margin: 1.5rem 0;
+}
+
+.contact-description {
+  color: var(--text-secondary);
+  line-height: 1.9;
+  max-width: 440px;
+}
+
+.contact-email {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.contact-email span {
+  color: var(--accent-color);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+}
+
+.contact-email a {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-size: 1rem;
+  width: fit-content;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.4rem;
+}
+
+.contact-email a:hover {
+  border-color: var(--accent-color);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.form-field label {
+  font-size: 0.8rem;
+  color: var(--text-primary);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  padding: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 0;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 0.85rem;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.contact-submit {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 1.5rem;
+  border: 1px solid var(--accent-color);
+  background: var(--accent-color);
+  color: #0d0d0f;
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: background var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.contact-submit:hover {
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.contact-submit span {
+  font-size: 1.1rem;
+}
+
+.contact-form-note {
+  color: var(--text-secondary);
+  font-size: 0.72rem;
+  line-height: 1.6;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .contact-email {
+    margin-top: 2.5rem;
+  }
+}
